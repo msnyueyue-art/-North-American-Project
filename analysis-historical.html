@@ -1127,18 +1127,17 @@
         <div class="page-header">
             <div class="analysis-toggle">
                 <button class="toggle-btn active" onclick="switchAnalysisMode('realtime', this)" data-i18n-key="analysis.realtime">实时分析</button>
-                <button class="toggle-btn" onclick="switchAnalysisMode('historical', this)" data-i18n-key="analysis.historical">历史分析</button>
             </div>
         </div>
 
         <!-- Region Selector for Real-time Analysis -->
         <div class="region-selector-container" id="regionSelectorContainer" style="display: block;">
             <div class="region-tabs">
-                <div class="region-tab active" onclick="switchRegion('NSW', this)">NSW</div>
-                <div class="region-tab" onclick="switchRegion('QLD', this)">QLD</div>
-                <div class="region-tab" onclick="switchRegion('VIC', this)">VIC</div>
-                <div class="region-tab" onclick="switchRegion('SA', this)">SA</div>
-                <div class="region-tab" onclick="switchRegion('TAS', this)">TAS</div>
+                <div class="region-tab active" onclick="switchRegion('新南威尔士州', this)">新南威尔士州</div>
+                <div class="region-tab" onclick="switchRegion('昆士兰州', this)">昆士兰州</div>
+                <div class="region-tab" onclick="switchRegion('维多利亚州', this)">维多利亚州</div>
+                <div class="region-tab" onclick="switchRegion('南澳大利亚州', this)">南澳大利亚州</div>
+                <div class="region-tab" onclick="switchRegion('塔斯马尼亚州', this)">塔斯马尼亚州</div>
             </div>
         </div>
 
@@ -3273,7 +3272,7 @@
         
         // Fetch real AEMO data
         async function fetchAEMOData(range) {
-            const region = 'NSW1'; // New South Wales as example
+            const region = '新南威尔士州1'; // New South Wales as example
             const endTime = new Date();
             let startTime;
             
@@ -3473,7 +3472,7 @@
         function renderSupplyDemandChart(chart, times, demand, generation, gap) {
             const option = {
                 title: {
-                    text: '实时AEMO数据 - NSW电力市场',
+                    text: '实时AEMO数据 - 新南威尔士州电力市场',
                     subtext: '数据源: AEMO Public API | 更新时间: ' + new Date().toLocaleTimeString('zh-CN'),
                     textStyle: {
                         color: 'rgba(255,255,255,0.8)',
@@ -3897,7 +3896,7 @@
             const chart = echarts.init(document.getElementById('predictionDeviationHeatmap'));
             
             const hours = [];
-            const regions = ['NSW1', 'QLD1', 'SA1', 'TAS1', 'VIC1'];
+            const regions = ['新南威尔士州1', '昆士兰州1', '南澳大利亚州1', '塔斯马尼亚州1', '维多利亚州1'];
             const heatmapData = [];
             
             for (let i = 0; i < 24; i++) {
@@ -5790,7 +5789,7 @@
             
             // 热力图数据
             const hours = [];
-            const regions = ['NSW1', 'QLD1', 'SA1', 'TAS1', 'VIC1'];
+            const regions = ['新南威尔士州1', '昆士兰州1', '南澳大利亚州1', '塔斯马尼亚州1', '维多利亚州1'];
             const heatmapData = [];
             
             for (let i = 0; i < 24; i++) {

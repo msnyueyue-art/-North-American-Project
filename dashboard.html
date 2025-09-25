@@ -4200,23 +4200,23 @@
                 <!-- 默认地区选择 -->
                 <div class="region-selection-tabs" style="display: flex; gap: 8px; justify-content: space-between; width: 100%;">
                     <button class="region-select-tab active" data-region="NSW" onclick="selectMainRegion('NSW', this)" style="padding: 16px 20px; background: var(--color-region-primary); color: #000; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; flex: 1; min-height: 60px; flex-direction: column; gap: 4px;">
-                        <span style="font-size: 14px; font-weight: 700;">NSW</span>
+                        <span style="font-size: 14px; font-weight: 700;">新南威尔士州</span>
                         <span class="region-status-badge" data-status="waitingExecution">等待执行中</span>
                     </button>
                     <button class="region-select-tab" data-region="QLD" onclick="selectMainRegion('QLD', this)" style="padding: 16px 20px; background: transparent; color: var(--color-text-secondary); border: 1px solid var(--color-border); border-radius: 50px; font-weight: 500; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; flex: 1; min-height: 60px; flex-direction: column; gap: 4px;">
-                        <span style="font-size: 14px; font-weight: 700;">QLD</span>
+                        <span style="font-size: 14px; font-weight: 700;">昆士兰州</span>
                         <span class="region-status-badge" data-status="autoCharge"></span>
                     </button>
                     <button class="region-select-tab" data-region="VIC" onclick="selectMainRegion('VIC', this)" style="padding: 16px 20px; background: transparent; color: var(--color-text-secondary); border: 1px solid var(--color-border); border-radius: 50px; font-weight: 500; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; flex: 1; min-height: 60px; flex-direction: column; gap: 4px;">
-                        <span style="font-size: 14px; font-weight: 700;">VIC</span>
+                        <span style="font-size: 14px; font-weight: 700;">维多利亚州</span>
                         <span class="region-status-badge" data-status="manualCharge"></span>
                     </button>
                     <button class="region-select-tab" data-region="SA" onclick="selectMainRegion('SA', this)" style="padding: 16px 20px; background: transparent; color: var(--color-text-secondary); border: 1px solid var(--color-border); border-radius: 50px; font-weight: 500; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; flex: 1; min-height: 60px; flex-direction: column; gap: 4px;">
-                        <span style="font-size: 14px; font-weight: 700;">SA</span>
+                        <span style="font-size: 14px; font-weight: 700;">南澳大利亚州</span>
                         <span class="region-status-badge" data-status="autoDischarge"></span>
                     </button>
                     <button class="region-select-tab" data-region="TAS" onclick="selectMainRegion('TAS', this)" style="padding: 16px 20px; background: transparent; color: var(--color-text-secondary); border: 1px solid var(--color-border); border-radius: 50px; font-weight: 500; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; flex: 1; min-height: 60px; flex-direction: column; gap: 4px;">
-                        <span style="font-size: 14px; font-weight: 700;">TAS</span>
+                        <span style="font-size: 14px; font-weight: 700;">塔斯马尼亚州</span>
                         <span class="region-status-badge" data-status="manualDischarge"></span>
                     </button>
                 </div>
@@ -4540,7 +4540,7 @@
                     <!-- 已获利 -->
                     <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                         <div style="font-size: 16px; margin-bottom: 4px;">💰</div>
-                        <div style="font-size: 10px; color: rgba(255,255,255,0.7); margin-bottom: 2px;" data-i18n="earnedProfit">已获利</div>
+                        <div style="font-size: 10px; color: rgba(255,255,255,0.7); margin-bottom: 2px;" data-i18n="earnedProfit">已利润</div>
                         <div style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 2px;">$13.56</div>
                         <div style="display: flex; align-items: center; gap: 2px;">
                             <span style="font-size: 11px; color: rgba(255,255,255,0.6);" data-i18n="compareYesterday">比昨日</span>
@@ -4558,7 +4558,7 @@
                     <!-- 家庭/Family -->
                     <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                         <div style="font-size: 20px; margin-bottom: 6px;">🏠</div>
-                        <div style="font-size: 11px; color: rgba(255,255,255,0.7); margin-bottom: 4px;" data-i18n="family">Family</div>
+                        <div style="font-size: 11px; color: rgba(255,255,255,0.7); margin-bottom: 4px;" data-i18n="family">家庭</div>
                         <div style="font-size: 18px; font-weight: 700; color: #fff;">50</div>
                     </div>
                     
@@ -4579,7 +4579,7 @@
                     <!-- 累计获利 -->
                     <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                         <div style="font-size: 20px; margin-bottom: 6px;">💰</div>
-                        <div style="font-size: 11px; color: rgba(255,255,255,0.7); margin-bottom: 4px;" data-i18n="totalProfit">累计获利</div>
+                        <div style="font-size: 11px; color: rgba(255,255,255,0.7); margin-bottom: 4px;" data-i18n="totalProfit">累计利润</div>
                         <div style="font-size: 18px; font-weight: 700; color: #fff;">$302.09</div>
                     </div>
                 </div>
@@ -4591,7 +4591,7 @@
             <!-- Discharge & Profit Chart 放电与收益 -->
                 <div class="card" style="height:422px; min-height:422px; max-height:422px; margin-top:20px; display:flex; flex-direction:column; align-items:stretch; justify-content:flex-start; padding:24px;">
                     <div class="chart-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
-                        <div class="chart-title" data-i18n="profit.charts.dischargeAndProfit" style="font-size:18px; font-weight:500; color:var(--color-text);">放电与获利</div>
+                        <div class="chart-title" data-i18n="profit.charts.dischargeAndProfit" style="font-size:18px; font-weight:500; color:var(--color-text);">放电与利润</div>
                         <div style="display:flex; align-items:center; gap:12px;">
                             <!-- Time Period Dropdown (on left) -->
                             <select id="discharge-period-select" class="period-dropdown" onchange="handleDischargePeriodChange()" style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:6px 12px; color:#fff; font-size:13px; min-width:80px; cursor:pointer; outline:none;">
@@ -4701,7 +4701,7 @@
 
                 <div class="stat-overview-card">
                     <div class="stat-overview-icon">💰</div>
-                    <div class="stat-overview-label">累计获利</div>
+                    <div class="stat-overview-label">累计利润</div>
                     <div class="stat-overview-value" id="totalProfit">$12,435</div>
                 </div>
             </div>
@@ -4854,7 +4854,7 @@
                         <div class="modal-info-value" id="confirmDuration">15-30分钟</div>
                     </div>
                     <div class="modal-info-item" style="display: none;">
-                        <div class="modal-info-label" data-i18n="estimatedProfit">预计获利</div>
+                        <div class="modal-info-label" data-i18n="estimatedProfit">预计利润</div>
                         <div class="modal-info-value" id="confirmCostBenefit">+$178</div>
                     </div>
                 </div>
@@ -6955,7 +6955,7 @@
                     }
                 },
                 legend: {
-                    data: [window.i18n ? window.i18n.getText('actualDischarge') : '实时放电量', window.i18n ? window.i18n.getText('profit') : '获利'],
+                    data: [window.i18n ? window.i18n.getText('actualDischarge') : '实时放电量', window.i18n ? window.i18n.getText('profit') : '利润'],
                     textStyle: { color: 'rgba(255, 255, 255, 0.7)' },
                     top: 0
                 },
@@ -6984,7 +6984,7 @@
                     splitLine: { lineStyle: { color: 'rgba(255, 255, 255, 0.1)' } }
                 }, {
                     type: 'value',
-                    name: window.i18n ? window.i18n.getText('profit') : '获利',
+                    name: window.i18n ? window.i18n.getText('profit') : '利润',
                     nameTextStyle: { color: 'rgba(255, 255, 255, 0.6)' },
                     min: 0,
                     max: 250,
@@ -7006,7 +7006,7 @@
                     },
                     barWidth: '40%'
                 }, {
-                    name: window.i18n ? window.i18n.getText('profit') : '获利',
+                    name: window.i18n ? window.i18n.getText('profit') : '利润',
                     type: 'line',
                     yAxisIndex: 1,
                     data: [5, 9.8, 220.9, 12.34, 10.34],
@@ -8191,7 +8191,7 @@
                         demand: 'Demand',
                         predictedDemand: 'Predicted Demand',
                         price: 'Price ($/MWh)',
-                        demandUnit: 'Demand (MW)'
+                        demandUnit: '需求 (MW)'
                     },
                     zh: {
                         historicalPrice: '历史价格',
@@ -8216,7 +8216,10 @@
                             params.forEach(param => {
                                 if (param.value !== null && param.value !== undefined) {
                                     const color = param.color;
-                                    const value = param.seriesName.includes(getText('price')) || param.seriesName.includes('Price') 
+                                    // 历史价格和预测价格都显示两位小数
+                                    const value = param.seriesName.includes(getText('price')) || param.seriesName.includes('Price') || 
+                                                 param.seriesName.includes(getText('historicalPrice')) || param.seriesName.includes('Historical Price') ||
+                                                 param.seriesName.includes(getText('predictedPrice')) || param.seriesName.includes('Predicted Price')
                                         ? `$${param.value.toFixed ? param.value.toFixed(2) : param.value}` 
                                         : `${param.value.toFixed ? param.value.toFixed(0) : param.value} MW`;
                                     result += `<div>${param.marker} ${param.seriesName}: <strong>${value}</strong></div>`;
@@ -12989,7 +12992,21 @@
                     trigger: 'axis',
                     backgroundColor: 'rgba(0, 0, 0, 0.8)',
                     borderColor: 'rgba(255, 255, 255, 0.2)',
-                    textStyle: { color: '#fff' }
+                    textStyle: { color: '#fff' },
+                    formatter: function(params) {
+                        let result = `<div style="font-weight: bold; margin-bottom: 5px;">${params[0].axisValue}</div>`;
+                        params.forEach(param => {
+                            if (param.value !== null && param.value !== undefined) {
+                                // 历史价格和预测价格都显示两位小数
+                                const value = param.seriesName.includes('历史价格') || param.seriesName.includes('Historical Price') ||
+                                             param.seriesName.includes('预测价格') || param.seriesName.includes('Predicted Price')
+                                    ? `$${param.value.toFixed ? param.value.toFixed(2) : param.value}` 
+                                    : param.value;
+                                result += `<div>${param.marker} ${param.seriesName}: <strong>${value}</strong></div>`;
+                            }
+                        });
+                        return result;
+                    }
                 },
                 legend: {
                     data: [

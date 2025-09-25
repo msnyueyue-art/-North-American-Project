@@ -1849,9 +1849,6 @@
             <button class="toggle-btn active" onclick="console.log('普通策略按钮被点击'); if(window.switchStrategy) { window.switchStrategy('normal', this); } else { alert('switchStrategy函数未加载'); }" data-i18n-key="pushStrategy.categories.normal">
                 <span data-i18n="pushStrategy.tabs.normal">普通策略</span>
             </button>
-            <button class="toggle-btn" onclick="console.log('高级策略按钮被点击'); if(window.switchStrategy) { window.switchStrategy('advanced', this); } else { alert('switchStrategy函数未加载'); }" data-i18n-key="pushStrategy.categories.advanced">
-                <span data-i18n="pushStrategy.tabs.advanced">高级策略</span>
-            </button>
         </div>
 
         <!-- Strategy Content Area -->
@@ -1890,27 +1887,27 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>NSW</td>
+                                <td>新南威尔士州</td>
                                 <td><input type="text" class="region-input" id="chargePrice_NSW" placeholder="0.00" value="0.35"></td>
                                 <td><input type="text" class="region-input" id="dischargePrice_NSW" placeholder="0.00" value="0.65"></td>
                             </tr>
                             <tr>
-                                <td>QLD</td>
+                                <td>昆士兰州</td>
                                 <td><input type="text" class="region-input" id="chargePrice_QLD" placeholder="0.00" value="0.30"></td>
                                 <td><input type="text" class="region-input" id="dischargePrice_QLD" placeholder="0.00" value="0.70"></td>
                             </tr>
                             <tr>
-                                <td>VIC</td>
+                                <td>维多利亚州</td>
                                 <td><input type="text" class="region-input" id="chargePrice_VIC" placeholder="0.00"></td>
                                 <td><input type="text" class="region-input" id="dischargePrice_VIC" placeholder="0.00"></td>
                             </tr>
                             <tr>
-                                <td>SA</td>
+                                <td>南澳大利亚州</td>
                                 <td><input type="text" class="region-input" id="chargePrice_SA" placeholder="0.00"></td>
                                 <td><input type="text" class="region-input" id="dischargePrice_SA" placeholder="0.00"></td>
                             </tr>
                             <tr>
-                                <td>TAS</td>
+                                <td>塔斯马尼亚州</td>
                                 <td><input type="text" class="region-input" id="chargePrice_TAS" placeholder="0.00"></td>
                                 <td><input type="text" class="region-input" id="dischargePrice_TAS" placeholder="0.00"></td>
                             </tr>
@@ -2011,7 +2008,7 @@
             </div>
             
             <!-- 高级策略内容 -->
-            <div class="strategy-content-section" id="advancedStrategy" style="display: none;">
+            <div class="strategy-content-section" id="advancedStrategy" style="display: none !important;">
                 <!-- 策略头部操作 -->
                 <div class="strategy-header">
                     <div class="strategy-info">
@@ -2380,11 +2377,11 @@
                                 <label class="modal-form-label" data-i18n="pushStrategy.modal.region">地区</label>
                                 <select class="form-input" id="modalRegion">
                                     <option value="all" selected data-i18n="pushStrategy.modal.allRegions">全部地区</option>
-                                    <option value="NSW">NSW</option>
-                                    <option value="QLD">QLD</option>
-                                    <option value="VIC">VIC</option>
-                                    <option value="SA">SA</option>
-                                    <option value="TAS">TAS</option>
+                                    <option value="NSW">新南威尔士州</option>
+                                    <option value="QLD">昆士兰州</option>
+                                    <option value="VIC">维多利亚州</option>
+                                    <option value="SA">南澳大利亚州</option>
+                                    <option value="TAS">塔斯马尼亚州</option>
                                 </select>
                             </div>
                             <div class="user-filter-item">

@@ -709,11 +709,11 @@
         <div class="time-selector-module" id="profitTimeSelectorModule">
             <select id="regionSelector" class="time-input" onchange="handleRegionChange()" style="min-width: 120px; margin-right: 12px; margin-left: 0; display: inline-block;">
                 <option value="all" data-i18n="allRegions">全部地区</option>
-                <option value="NSW">NSW</option>
-                <option value="QLD">QLD</option>
-                <option value="VIC">VIC</option>
-                <option value="SA">SA</option>
-                <option value="TAS">TAS</option>
+                <option value="新南威尔士州">新南威尔士州</option>
+                <option value="昆士兰州">昆士兰州</option>
+                <option value="维多利亚州">维多利亚州</option>
+                <option value="南澳大利亚州">南澳大利亚州</option>
+                <option value="塔斯马尼亚州">塔斯马尼亚州</option>
             </select>
             <button class="time-pill active" onclick="switchTimePeriod('day', this)" data-i18n="dayReport">日</button>
             <button class="time-pill" onclick="switchTimePeriod('month', this)" data-i18n="monthReport">月</button>
@@ -1350,11 +1350,11 @@
             // For now, using demo data with region multipliers
             const regionMultipliers = {
                 'all': 1,
-                'NSW': 0.35,
-                'QLD': 0.25,
-                'VIC': 0.20,
-                'SA': 0.15,
-                'TAS': 0.05
+                '新南威尔士州': 0.35,
+                '昆士兰州': 0.25,
+                '维多利亚州': 0.20,
+                '南澳大利亚州': 0.15,
+                '塔斯马尼亚州': 0.05
             };
             
             const multiplier = regionMultipliers[region] || 1;
@@ -1441,11 +1441,11 @@
                     // Add options
                     const regions = [
                         { value: 'all', text: window.i18n ? window.i18n.getText('allRegions') : '全部地区' },
-                        { value: 'NSW', text: 'NSW' },
-                        { value: 'QLD', text: 'QLD' },
-                        { value: 'VIC', text: 'VIC' },
-                        { value: 'SA', text: 'SA' },
-                        { value: 'TAS', text: 'TAS' }
+                        { value: '新南威尔士州', text: '新南威尔士州' },
+                        { value: '昆士兰州', text: '昆士兰州' },
+                        { value: '维多利亚州', text: '维多利亚州' },
+                        { value: '南澳大利亚州', text: '南澳大利亚州' },
+                        { value: '塔斯马尼亚州', text: '塔斯马尼亚州' }
                     ];
                     
                     regions.forEach(region => {
@@ -1573,11 +1573,11 @@
             // Apply region multiplier for data
             const regionMultipliers = {
                 'all': 1,
-                'NSW': 0.35,
-                'QLD': 0.25,
-                'VIC': 0.20,
-                'SA': 0.15,
-                'TAS': 0.05
+                '新南威尔士州': 0.35,
+                '昆士兰州': 0.25,
+                '维多利亚州': 0.20,
+                '南澳大利亚州': 0.15,
+                '塔斯马尼亚州': 0.05
             };
             const multiplier = regionMultipliers[region] || 1;
             const options = {
@@ -2420,11 +2420,11 @@
                         // Add options
                         const regions = [
                             { value: 'all', text: window.i18n ? window.i18n.getText('allRegions') : '全部地区' },
-                            { value: 'NSW', text: 'NSW' },
-                            { value: 'QLD', text: 'QLD' },
-                            { value: 'VIC', text: 'VIC' },
-                            { value: 'SA', text: 'SA' },
-                            { value: 'TAS', text: 'TAS' }
+                            { value: '新南威尔士州', text: '新南威尔士州' },
+                            { value: '昆士兰州', text: '昆士兰州' },
+                            { value: '维多利亚州', text: '维多利亚州' },
+                            { value: '南澳大利亚州', text: '南澳大利亚州' },
+                            { value: '塔斯马尼亚州', text: '塔斯马尼亚州' }
                         ];
                         
                         regions.forEach(region => {
